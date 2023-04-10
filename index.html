@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -45,68 +51,85 @@
     </header>
 
     <main id="main">
-      <section class="section1">
-        <span>April 25, 2023</span>
-        <h2>
-          La montagne <br />
-          de DJURDJURA
-        </h2>
-        <p>
-          Djurdjura est une majestueuse chaîne de montagnes située en Algérie,
-          offrant des paysages époustouflants, des sentiers de randonnée
-          passionnants et une richesse culturelle unique. Si vous êtes à la
-          recherche d'une expérience de voyage exceptionnelle, je vous
-          recommande vivement de découvrir cette beauté naturelle de Djurdjura
-          et de vivre des moments inoubliables en explorant ses vues à couper le
-          souffle. Alors, n'hésitez plus et partez à la découverte de la magie
-          de Djurdjura dès que possible !
-        </p>
-        <img src="./asset/img/pic01.jpg" alt="img-hiking" />
-        <button class="btn">full story</button>
-      </section>
-      <section class="section2">
-        <div class="left-part">
-          <span>April 24, 2023</span>
-          <h3>Le Mont Blanc</h3>
-          <img src="./asset/img/pic02.jpg" alt="forest" />
-          <p>
-            Découvrez la beauté naturelle du Mont Blanc, la plus haute montagne
-            des Alpes françaises, culminant à 4 809 mètres d'altitude. Avec ses
-            sommets enneigés, ses glaciers et ses vallées verdoyantes, le Mont
-            Blanc offre des paysages spectaculaires pour la randonnée,
-            l'escalade, le ski et le parapente. Explorez cette destination
-            incontournable pour une expérience de voyage unique en France.
+      <div class="card">
+        <span> 25 Avril 2023</span>
+        <img src="./asset/img/algérie.png" alt="img-hiking" />
+        <div class="card-body">
+          <h2 class="card-title">
+            La montagne <br />
+            de DJURDJURA
+          </h2>
+          <p class="card-text">
+            Djurdjura est une majestueuse chaîne de montagnes située en Algérie,
+            offrant des paysages époustouflants, des sentiers de randonnée
+            passionnants et une richesse culturelle unique. Si vous êtes à la
+            recherche d'une expérience de voyage exceptionnelle, je vous
+            recommande vivement de découvrir cette beauté naturelle de Djurdjura
+            et de vivre des moments inoubliables en explorant ses vues à couper
+            le souffle. Alors, n'hésitez plus et partez à la découverte de la
+            magie de Djurdjura dès que possible !
           </p>
+
           <button class="btn">full story</button>
         </div>
-        <div class="right-part">
-          <span>April 22, 2023</span>
-          <h3>Les dolomites</h3>
-          <img src="./asset/img/pic03.jpg" alt="les haiteurs" height="303.65" />
-          <p>
-            Bienvenue dans les Dolomites, joyau d'Italie ! Des sommets rocheux
-            majestueux, des lacs cristallins scintillants et des sentiers de
-            randonnée pittoresques vous y attendent. Destination de choix pour
-            les amoureux de la nature, les randonneurs et les skieurs, les
-            Dolomites sont inscrites au patrimoine mondial de l'UNESCO pour leur
-            beauté naturelle exceptionnelle. Venez découvrir ce trésor naturel
-            et laissez-vous envoûter par son charme unique
-          </p>
-          <button class="btn">full story</button>
+      </div>
+      <section class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <img src="./asset/img/france.jpg" alt="forest" />
+            <div class="card-body">
+              <span>24 Avril 2023</span>
+              <h3 class="title">Le Mont Blanc</h3>
+              <p class="text">
+                Découvrez la beauté naturelle du Mont Blanc, la plus haute
+                montagne des Alpes françaises, culminant à 4 809 mètres
+                d'altitude. Avec ses sommets enneigés, ses glaciers et ses
+                vallées verdoyantes, le Mont Blanc offre des paysages
+                spectaculaires pour la randonnée, l'escalade, le ski et le
+                parapente. Explorez cette destination incontournable pour une
+                expérience de voyage unique en France.
+              </p>
+              <button class="btn">full story</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img
+              src="./asset/img/italie.jpg"
+              alt="les haiteurs"
+              height="303.65"
+            />
+            <div class="card-body">
+              <span>22 Avril 2023</span>
+
+              <h3>Les dolomites</h3>
+
+              <p>
+                Bienvenue dans les Dolomites, joyau d'Italie ! Des sommets
+                rocheux majestueux, des lacs cristallins scintillants et des
+                sentiers de randonnée pittoresques vous y attendent. Destination
+                de choix pour les amoureux de la nature, les randonneurs et les
+                skieurs, les Dolomites sont inscrites au patrimoine mondial de
+                l'UNESCO pour leur beauté naturelle exceptionnelle.
+              </p>
+              <button class="btn">full story</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
       <form action="">
-        <label for="name">name</label>
+        <label for="name">nom</label>
         <input type="text" id="name" />
         <label for="e-mail">email</label>
         <input type="text" id="email" />
         <label for="message">message</label>
         <textarea id="message" cols="30" rows="10"></textarea>
         <div class="sumbit-container">
-          <button class="btn">send message</button>
+          <button class="btn">envoyer</button>
         </div>
       </form>
       <div class="infos-contact">
@@ -115,7 +138,7 @@
           <p><br />4 Avenue Jules Guesde <br />92330 Sceaux</p>
         </div>
         <div class="phone">
-          <h3>phone</h3>
+          <h3>tel</h3>
           <p>07 66 70 65 84</p>
         </div>
         <div class="email">
@@ -123,7 +146,7 @@
           <p>info-mntg@gmail.com</p>
         </div>
         <div class="social">
-          <h3>social</h3>
+          <h3>réseaux</h3>
           <ul>
             <li><i class="fa-brands fa-twitter"></i></li>
             <li><i class="fa-brands fa-facebook"></i></li>
